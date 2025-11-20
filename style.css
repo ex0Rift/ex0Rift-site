@@ -26,6 +26,7 @@ body {
 
 .content{
     background-color: #403E3E;
+    position: relative;
     border:solid black 1px;
     width: 50vw;
     height: 1000px;
@@ -43,6 +44,32 @@ body {
     border-radius: 32px;
     align-items: center;
     gap: 15px;
+}
+
+.content .content-footer{
+    position: absolute;
+    padding: 25px;
+    left: 0;
+    bottom: 0;
+    width: inherit;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+}
+
+.content-footer button{
+    color: white;
+    background-color: #74db74;
+    border: solid #67bd67 1px;
+    border-radius: 16px;
+    padding: 15px 40px;
+}
+
+.content-footer button:hover{
+    background-color: #618a61;
+    border: solid #4e694e 1px;
 }
 
 .image-carosel {
@@ -85,8 +112,7 @@ body {
 }
 
 .card a {
-    color: white;
-    text-decoration: none;
+    color: rgb(162, 204, 228);
 }
 
 .card h2 {
@@ -96,7 +122,7 @@ body {
 }
 
 .card a:hover{
-    text-decoration:underline;
+    color: rgb(137, 175, 197)
 }
 
 .bubbles-carosel{
