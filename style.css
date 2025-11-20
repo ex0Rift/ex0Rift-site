@@ -45,6 +45,10 @@ body {
     gap: 15px;
 }
 
+.content p{
+    padding-right:120px ;
+}
+
 .content .content-footer{
     position: absolute;
     padding: 25px;
@@ -164,6 +168,40 @@ bubble{
 .green{
     background-color: #74db74;
 }
+
+/*Mobile viewport*/
+
+@media (max-width:800px){
+    .content{
+        width: 95%;
+        padding-top: 460px;
+    }
+
+    .content .roboto-mono-thin{
+        padding-right: 10px;
+    }
+
+    .content .meCard{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #5C5757;
+    border: solid black 1px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 100%;
+    border-radius: 16px;
+    align-items: center;
+    gap: 15px;
+
+
+}
+}
+
+
+
 
 @keyframes rotate {
     from {transform: rotate(0deg);}
