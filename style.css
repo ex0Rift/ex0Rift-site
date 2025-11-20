@@ -29,7 +29,6 @@ body {
     position: relative;
     border:solid black 1px;
     width: 50vw;
-    height: 1000px;
     border-radius: 16px;
     padding: 32px;
     box-sizing: border-box;
@@ -111,18 +110,27 @@ body {
     padding: 15px;
 }
 
-.card a {
+a {
     color: rgb(162, 204, 228);
+}
+
+a:hover{
+    color: rgb(137, 175, 197)
+}
+
+.music-card-link{
+    color: white;
+    text-decoration: none;
+}
+
+.music-card-link:hover{
+    text-decoration: underline;
 }
 
 .card h2 {
     margin: 15px;
     margin-left: 0;
     margin-bottom: 0;
-}
-
-.card a:hover{
-    color: rgb(137, 175, 197)
 }
 
 .bubbles-carosel{
@@ -157,3 +165,9 @@ bubble{
     background-color: #74db74;
 }
 
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+/*animation: rotate 5s linear infinite;*/
