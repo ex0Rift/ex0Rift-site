@@ -4,7 +4,6 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 80px;
 }
 
 
@@ -20,6 +19,7 @@ body {
     background-color: #292828;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -27,20 +27,55 @@ body {
 .content{
     background-color: #403E3E;
     border:solid black 1px;
-    width: 1000px;
+    width: 50vw;
     height: 1000px;
     border-radius: 16px;
+    padding: 32px;
+    box-sizing: border-box;
 }
 
 .content .meCard{
     background-color: #5C5757;
+    border: solid black 1px;
     display: flex;
-    margin: 32px;
     width: 600px;
     height: 250px;
     border-radius: 32px;
     align-items: center;
     gap: 15px;
-
 }
 
+.image-carosel {
+    width: inherit;
+    display: flex;
+    gap: 20px;
+}
+
+.image-carosel img{
+    width: 60px;
+    height: auto;
+    object-fit:  contain;
+}
+
+
+.projects-area{
+    padding: 0;
+    margin-top: 50px;
+    width: 50vw;
+}
+
+.projects-grid {
+    width: inherit;
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    
+}
+
+.projects-grid .card {
+    background-color: #5C5757;
+    border-radius: 16px;
+    border: solid black 1px;
+}
