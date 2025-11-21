@@ -103,8 +103,11 @@ body {
     padding: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
+}
+
+.current-project-card bubble{
+    margin-left: 10px;
 }
 
 .current-project-card h2{
@@ -312,6 +315,32 @@ bubble{
 
     .projects-grid .card {
         width: inherit;
+    }
+
+    .text-either-side-of-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .current-project-card h3{
+        
+        margin-block: 5px;
+        margin-right: 5px;
+    }
+
+    .current-project-card{
+        width: 90%;
+        height: 200px;
+    }
+
+    .contact-card-container{
+        flex-direction: column;
+    }
+
+    .content#contact-content{
+        padding-top: 15px;
     }
 }
 
