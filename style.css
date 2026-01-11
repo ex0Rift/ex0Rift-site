@@ -221,6 +221,10 @@ bubble{
     background-color: #cf3dbc;
 }
 
+.light-blue{
+    background-color: #76a8eb;
+}
+
 .contact-card-container{
     display: flex;
     gap: 15px;
@@ -315,6 +319,30 @@ bubble{
     background-color: #5C5757;
 }
 
+.blog-card{
+    position: relative;
+    background-color: #5C5757;
+    border: solid black 1px;
+    border-radius: 16px;
+    padding-inline: 16px;
+    margin-block: 32px;
+}
+
+.blog-card p{
+    padding-left: 15px;
+    color: #cccbcb;
+}
+
+.blog-card button{
+    margin-bottom: 15px;
+    padding: 15px 80px;
+    font-size: 18px;
+}
+
+.align-right{
+    display: flex;
+    justify-content: flex-end ;
+}
 
 /*Mobile viewport*/
 
