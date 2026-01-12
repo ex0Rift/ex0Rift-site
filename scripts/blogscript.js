@@ -3,16 +3,19 @@ const isLocal =
     location.hostname === "127.0.0.1" ||
     location.hostname === "";
 
+let prefix = "";
+
 document.addEventListener("DOMContentLoaded", () =>{
     const perams = new URLSearchParams(window.location.search);
     const file = perams.get("file");
 
     if (!file) document.getElementById("body").textContent = "error: Text file was not found";
 
-    if (isLocal){
-        let prefix = "";
+    if (!isLocal){
+        let prefix = "https://me.natesite.co.uk";
+        console.log("The page is on buid");
     }else{
-        let prefix = "https://me.natesite.co.uk"
+        console.log("not on build")
     }
 
     fetch(`${prefix}/blogs/${file}`)
