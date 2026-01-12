@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     if (!file) document.getElementById("body").textContent = "error: Text file was not found";
 
-    fetch(`blogs/${file}`)
+    fetch(`blogs/${file}`, {cache: "no-store"})
         .then(r => r.text())
         .then(t => {
             document.getElementById("body").innerHTML = t;
