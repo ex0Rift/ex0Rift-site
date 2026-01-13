@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     if (!file) document.getElementById("body").textContent = "error: Text file was not found";
 
     if (!isLocal){
-        let prefix = "https://me.natesite.co.uk";
+        prefix = "https://me.natesite.co.uk";
         console.log("The page is on buid");
     }else{
         console.log("not on build")
