@@ -1,7 +1,9 @@
+console.log("The script has loaded for this page.");
+
+
 const isLocal =
     location.hostname === "localhost" ||
-    location.hostname === "127.0.0.1" ||
-    location.hostname === "";
+    location.hostname === "127.0.0.1";
 
 let prefix = "";
 
